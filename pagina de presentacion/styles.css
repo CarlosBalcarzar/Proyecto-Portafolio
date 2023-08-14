@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.informacion {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: aliceblue;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2, 2, 43);
+    transition: background-color 0.5s ease;
+    mix-blend-mode: lighten; /* Mezcla para aclarar */
+}
+.background:hover {
+    background-color: rgb(10, 10, 68); /* Cambia a un tono más claro */
+}
+body:hover .background {
+    filter: brightness(1.2); /* Ajusta el brillo del fondo al pasar el mouse por encima del body */
+}
