@@ -1,15 +1,24 @@
 body, html {
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-y: scroll;
+    font-family: 'Fira Mono', monospace;
 }
 
 .informacion {
-    position: fixed;
+    
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     color: aliceblue;
+}
+.imagen1 {
+    width: 10px; /* Ancho de la imagen */
+    height: 10px; /* Altura de la imagen */
+    position: absolute; /* Posición absoluta */
+    top: 1000px; /* Distancia desde la parte superior */
+    left: 50px; /* Centrar horizontalmente */
 }
 
 .background {
