@@ -1,39 +1,108 @@
 body, html {
     margin: 0;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: fixed;
     font-family: 'Fira Mono', monospace;
 }
-
 .informacion {
     
     position: absolute;
-    top: 0;
+    top: 600px;
     left: 50%;
     transform: translateX(-50%);
     color: aliceblue;
 }
-.imagen1 {
-    width: 10px; /* Ancho de la imagen */
-    height: 10px; /* Altura de la imagen */
-    position: absolute; /* Posición absoluta */
-    top: 1000px; /* Distancia desde la parte superior */
-    left: 50px; /* Centrar horizontalmente */
+.titulo{
+    position: absolute;
+    top: 200px;
+    left: 1900px;
+    transform: translateX(-70%);
+    color: rgb(0, 0, 0);
 }
-
-.background {
+.titulo2{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(0, 0, 0);
+}
+.fondo_s{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}
+.icono{
+    position: fixed;
+    top: 390px;
+    left: 2000px;
+}
+.perfil{
+    position: fixed;
+    top: 100px;
+    left: 60px;
+    width: 400px;
+    height: 400px;
+}
+.background1 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(2, 2, 43);
+    background-color: rgb(0, 0, 0);
     transition: background-color 0.5s ease;
-    mix-blend-mode: lighten; /* Mezcla para aclarar */
+    mix-blend-mode: lighten;
 }
-.background:hover {
-    background-color: rgb(10, 10, 68); /* Cambia a un tono más claro */
+.background1:hover {
+    background-color: rgb(10, 10, 10);
 }
-body:hover .background {
-    filter: brightness(1.2); /* Ajusta el brillo del fondo al pasar el mouse por encima del body */
+body:hover .background1 {
+    filter: brightness(1.2);
 }
+.input-container {
+    top: 30px;
+    left: 1800px;
+    width: 220px;
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: calc(50% + 5px);
+    transform: translateY(calc(-50% - 5px));
+  }
+  
+  .input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    transition: .2s linear;
+    border: 2.5px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .input:focus {
+    outline: none;
+    border: 0.5px solid black;
+    box-shadow: -5px -5px 0px black;
+  }
+  
+  .input-container:hover > .icon {
+    animation: anim 1s linear infinite;
+  }
+  
+  @keyframes anim {
+    0%,
+    100% {
+      transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+  
+    50% {
+      transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+  }
