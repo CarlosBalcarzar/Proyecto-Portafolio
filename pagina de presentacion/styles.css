@@ -5,7 +5,6 @@ body, html {
     font-family: 'Fira Mono', monospace;
 }
 .informacion {
-    
     position: absolute;
     top: 600px;
     left: 50%;
@@ -14,9 +13,8 @@ body, html {
 }
 .titulo{
     position: absolute;
-    top: 200px;
-    left: 1900px;
-    transform: translateX(-70%);
+    top: 400px;
+    left: 500px;
     color: rgb(0, 0, 0);
 }
 .redes_sociales{
@@ -39,10 +37,46 @@ body, html {
     width: 100%;
     height: 500px;
 }
+.interfaz{
+  position: absolute;
+  background-color: rgba(41, 41, 41, 0.815);
+  color: aliceblue;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60px;
+}
+.nombre_titulo {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  width: 0;
+  animation: maquina-escribir 2s steps(26) infinite alternate;
+}
+
+@keyframes maquina-escribir {
+  from {
+      width: 0;
+  }
+  to {
+      width: 230px;
+  }
+}
+
 .icono{
     position: absolute;
     top: 390px;
-    left: 2000px;
+    left: 1750px;
+    filter: grayscale(100%);
+    animation: saltar 1.5s infinite;
+}
+@keyframes saltar {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-200px);
+  }
 }
 .perfil{
     position: absolute;
@@ -51,7 +85,7 @@ body, html {
     width: 400px;
     height: 400px;
 }
-.background1 {
+.fondo {
     position: fixed;
     top: 0;
     left: 0;
@@ -118,7 +152,7 @@ body:hover .background1 {
 }
 .input-container {
     top: 30px;
-    left: 1800px;
+    left: 1500px;
     width: 220px;
     position: fixed;
   }
