@@ -19,6 +19,12 @@ body, html {
     transform: translateX(-70%);
     color: rgb(0, 0, 0);
 }
+.redes_sociales{
+    position: absolute;
+    top: 1700px;
+    left: 400px;
+    color: rgb(0, 0, 0);
+}
 .titulo2{
     position: absolute;
     top: 100px;
@@ -27,19 +33,19 @@ body, html {
     color: rgb(0, 0, 0);
 }
 .fondo_s{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 500px;
 }
 .icono{
-    position: fixed;
+    position: absolute;
     top: 390px;
     left: 2000px;
 }
 .perfil{
-    position: fixed;
+    position: absolute;
     top: 100px;
     left: 60px;
     width: 400px;
@@ -61,20 +67,67 @@ body, html {
 body:hover .background1 {
     filter: brightness(1.2);
 }
+.blender{
+  position: absolute;
+  top: 1000px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: aliceblue;
+}
+.unity{
+  position: absolute;
+  top: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: aliceblue;
+}
+.escritor{
+  position: absolute;
+  top: 1400px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: aliceblue;
+}
+.diseñador{
+  position: absolute;
+  top: 1600px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: aliceblue;
+}
+.facebook{
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 1800px;
+  left: 200px;
+}
+.instagram{
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 1800px;
+  left: 400px;
+}
+.twitter{
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 1800px;
+  left: 600px;
+}
 .input-container {
     top: 30px;
     left: 1800px;
     width: 220px;
-    position: relative;
+    position: fixed;
   }
-  
   .icon {
     position: absolute;
     right: 10px;
     top: calc(50% + 5px);
     transform: translateY(calc(-50% - 5px));
   }
-  
   .input {
     width: 100%;
     height: 40px;
@@ -85,17 +138,14 @@ body:hover .background1 {
     text-transform: uppercase;
     letter-spacing: 2px;
   }
-  
   .input:focus {
     outline: none;
     border: 0.5px solid black;
     box-shadow: -5px -5px 0px black;
   }
-  
   .input-container:hover > .icon {
     animation: anim 1s linear infinite;
   }
-  
   @keyframes anim {
     0%,
     100% {
